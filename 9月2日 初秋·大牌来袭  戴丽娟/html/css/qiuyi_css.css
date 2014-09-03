@@ -1,0 +1,84 @@
+.qiuyi{
+	
+}
+
+.qiuyi_top{
+	width: 100%;	
+	background:#ffa66c url(../images/images/header_01.jpg) no-repeat top center;
+	background-repeat: no-repeat;
+	height: 564px;
+	color: red;
+	margin: 0px;
+	padding: 0px;
+}
+
+.qiuyi_container{
+	background: #ffa66c url(../images/images/bg_pro_12.gif) repeat-y  top center;	
+	width: 100%;
+}
+
+.qiuyi_row{
+	width: 990px;
+	height: 414px;
+	background-color: #f6733d;
+	margin:0 auto;
+}
+
+.qiuyi_row2{
+	width: 990px;
+	height: 560px;
+	background-color: #f6733d;
+	margin:0 auto;
+}
+
+.qiuyi_meinv{
+	float: left;
+	position: relative;
+	width: 300px;
+	height: 200px;
+	background-color: yellow;
+	z-index: 100;
+	left: -100px;
+}
+.qiuyi_pro1{
+	width: 242px;
+	height: 391px;
+	background-color: red;
+	float: left;	
+	margin-top: 10px;
+	margin-left: 6px;
+}
+
+.qiuyi_pro{
+	width: 242px;
+	height: 391px;
+	background-color: red;
+	float: left;	
+	margin-top: 10px;
+	margin-left: 3px;
+}
+
+.qiuyi_pro_img{
+	height: 283px;
+	background-color: #fff;
+}
+
+.qiuyi_pro_title,.qiuyi_pro_futitle,.qiuyi_pro_price{
+	background-color: #fffea4;
+}
+
+.qiuyi_pro_title{
+	height: 25px;
+}
+
+.qiuyi_pro_futitle{
+	height: 25px;
+}
+
+.qiuyi_pro_price{
+	height: 58px;
+}
+
+.qiuyi_clear{
+	clear: both;
+}
