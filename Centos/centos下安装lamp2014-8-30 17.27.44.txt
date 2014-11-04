@@ -1,0 +1,101 @@
+
+
+    1. 安装Apahce, PHP, MySQL以及php连接mysql库组件。
+    #yum -y install httpd php mysql mysql-server php-mysql
+
+
+    2. 安装apache扩展
+
+    #yum -y install httpd-manual mod_ssl mod_perl mod_auth_mysql
+
+
+    3. 安装php的扩展
+    #yum -y install php-gd php-xml php-mbstring php-ldap php-pear php-xmlrpc
+
+    4. 安装MySQL的扩展
+
+    #yum -y install mysql-connector-odbc mysql-devel libdbi-dbd-mysql
+
+    5. 配置开机启动服务
+    #/sbin/chkconfig httpd on             [设置apache服务器httpd服务开机启动]
+    #/sbin/service httpd start            [启动httpd服务,与开机启动无关]
+    #/sbin/service mysqld start           [启动mysqld服务,与开机启动无关]
+
+     
+
+    apache的配置文件是/etc/httpd/conf下
+    modules放在/usr/lib/httpd下
+    php的配置文件在/etc/php.d/下 和/etc/php.ini
+    php的modules放在/usr/lib/php/modules下
+
+     
+
+    6. 安装Tomcat5
+
+    #yum -y install tomcat5 tomcat5-webapps tomcat5-admin-webapps
+
+     
+
+    7. 启动Tomcat5
+
+    #service tomcat5 start
+
+     
+
+    8. 在浏览器输入http://www.2cto.com :8080/,可以看到Apache SoftWare Foundation页，如果看不到，请确认是否是防火墙问题
+
+     
+
+    可以用service tomcat5 stop命令停止tomcat
+
+    可以用chkconfig tomcat5 on指令于开机时启动tomcat
+    Tomcat5安装目录位于/user/share/tomcat5
+
+     
+
+    9. Apache与Tomcat整合
+
+     
+
+    如果网站需同时整合Apache与Tomcat可以使用JK或者Proxy方式
+
+    使用VI编辑proxy_ajp.conf文件
+
+    #vi /etc/httpd/conf.d/proxy_ajp.conf
+
+    输入以下内容
+
+    ProxyPass /tomcat/ ajp://localhost:8009/
+
+    存储文件后，重启Apache
+
+    #service httpd restart
+
+     
+
+    10. 在浏览器输入http://你的IP/tomcat/,可以看到Apache SoftWare Foundation页
+
+
+查看是否安装apache
+apachectl -v	或
+rpm -qa |gerp httpd	或
+httpd -v
+
+查看是否安装php
+rpm -qa |grep php
+php -v
+
+
+查看是否安装mysql
+rpm -qa |grep mysql
+mysql -v
+--help|grep Distrib
+或进入mysql,通过命令select version();
+
+ 
+
+
+
+
+
+
