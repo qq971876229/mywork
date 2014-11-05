@@ -92,6 +92,20 @@ mysql -v
 --help|grep Distrib
 或进入mysql,通过命令select version();
 
+
+启动mysql服务
+/etc/init.d/mysqld start
+或service mysqld start
+停止mysql服务
+/etc/init.d/mysqld stop
+重新启动mysql服务
+/etc/init.d/mysqld restart
+
+卸载已存在的apache服务和php
+yum remove httpd php*
+递归删除文件夹nigx(文件夹内有文件)
+rm -rf nigx
+
  
 
 
