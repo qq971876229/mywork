@@ -1,0 +1,15 @@
+*{margin: 0px;padding: 0px;font-size: 12px;}
+.fontCenter{text-align: center;}
+.top{text-align: center;height: 41px;line-height: 41px;background-color: #f9f9f9;}
+.topContent{width:1200px;margin:0 auto;}
+.topContent_left{width: 620px;text-align: left;float: left;font-size: 13px;}
+.topContent_right{width:580px;text-align: right;float: left;font-size: 13px;}
+.topAd{text-align: center;}
+
+.search{width:1200px;margin: 0 auto;}
+.search{width:1200px;margin: 0 auto;background:url(../images/index/feiniu-index-icon.png) 320px -141px; border: 3px red solid;}
+.icon{width: 300px;height: 60px;float:left;background: url(../images/index/feiniu-index-icon.png) 0px 0px;}
+
+.naviBar{}
+
+.clearBoth{clear:both;}
